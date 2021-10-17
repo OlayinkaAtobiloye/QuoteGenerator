@@ -1,0 +1,13 @@
+.quote{
+    font-family: Raleway;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: 43px;
+letter-spacing: 0em;
+text-align: left;
+width: 45vw;
+border-left: 8px solid #F7DF94;
+padding-left: 5vw;
+margin-bottom: 100px;
+}

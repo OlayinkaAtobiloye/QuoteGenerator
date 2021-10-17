@@ -1,0 +1,46 @@
+.Author{
+    width: 45vw;
+    position: relative;
+    margin-left: 5vw;
+    padding-left: 16px;
+    margin-top: 20vh;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.Author:hover{
+    background: #333333;
+}
+
+.authorName{
+    font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+color: #F2F2F2;
+margin: 0;
+margin-bottom: 20px;
+}
+
+.authorInd{
+    font-family: Raleway;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+color: #828282;
+margin: 0;
+}
+
+.arrow{
+    color: #F2F2F2;
+    width: 16px;
+    position: absolute;
+    bottom: 45%;
+    right: 16px;
+}

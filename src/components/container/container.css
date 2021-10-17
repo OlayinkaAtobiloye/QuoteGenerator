@@ -1,0 +1,47 @@
+.Container{
+    padding: 16px;
+    margin-left: 20%;
+    background: #ffffff;
+}
+
+.appName{
+    position: absolute;
+    font-family: Raleway;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 120%;
+color: #4F4F4F;
+right: 5vw;
+margin-top: 16px;
+display: flex;
+}
+
+.appName:hover{
+    cursor: pointer;
+}
+
+.main{
+    margin-top: 20vh;
+}
+
+.footer{
+    margin-top: 30vh;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.material-icons{
+    height: 10px;
+}
+
+.authorHeader{
+    padding-left: 5vw;
+    font-family: Raleway;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 42px;
+color: #333333;
+margin-bottom: 100px;
+}
