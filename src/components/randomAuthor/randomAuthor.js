@@ -4,6 +4,7 @@ import Quote from "../quote/quote";
 import { connect } from "react-redux";
 import { getAuthorQuotes } from "../../store/actions";
 
+
 const RandomAuthor = (props) => {
   if (props.match) {
     props.getAuthorQuotes(props.match.url.slice(1));

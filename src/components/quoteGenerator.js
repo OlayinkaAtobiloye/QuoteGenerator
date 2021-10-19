@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 import React from "react";
 
 const RandomGenerator = (props) => {
-  console.log(props.match.url);
   return props.showAuthorQuotes ? <RandomAuthor /> : <RandomQuote />;
 };
 const mapStateToProps = (state) => {

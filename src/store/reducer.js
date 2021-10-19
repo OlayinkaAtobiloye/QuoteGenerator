@@ -5,6 +5,7 @@ const initialState = {
   author: "Bill Gates",
   genre: "business",
   showAuthorQuotes: false,
+  loading: true
 };
 
 const Reducer = (state = initialState, action) => {
@@ -18,6 +19,7 @@ const Reducer = (state = initialState, action) => {
         author: quotes.quoteAuthor,
         genre: quotes.quoteGenre,
         showAuthorQuotes: false,
+        loading: false
       };
 
     case "GET_AUTHOR":
@@ -26,6 +28,7 @@ const Reducer = (state = initialState, action) => {
         quotes: action.quotes.map((quote) => quote.quoteText),
         showAuthorQuotes: true,
         author: action.author,
+        loading: false
       };
 
     default:

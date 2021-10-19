@@ -1,9 +1,11 @@
 import axios from "axios";
 
 const setQuote = (quote) => {
+  console.log("done")
   return {
     type: "REFRESH",
     quote: quote.data,
+    loading: true
   };
 };
 const refresh = () => {
@@ -27,11 +29,14 @@ const setAuthorQuotes = (quotes, author) => {
 
 export const getAuthorQuotes = (author) => {
   return (dispatch, getState) => {
-    // let author = getState().author
-    console.log(author);
-    axios
+    let prevAauthor = getState().author
+    if (prevAauthor != author || getState().showAuthorQuotes == false){
+      axios
       .get(`https://quote-garden.herokuapp.com/api/v3/quotes?author=${author}`)
       .then((response) => dispatch(setAuthorQuotes(response.data, author)));
+    }
+    console.log(author);
+    
   };
 };
 
